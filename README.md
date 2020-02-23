@@ -9,6 +9,7 @@ initialize the virtual environment using .\venv\Scripts\activate.bat on windows
 install scrapy library using the following command pip install scrapy
 
 ### Running the application
+cd bookmyshow
 scrapy crawl bookmyshow
 
 ### Test
