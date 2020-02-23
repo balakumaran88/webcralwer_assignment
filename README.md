@@ -22,14 +22,14 @@ A SQLite database with the name "bookmyshows.db" is created and the dtabase cont
 ```I was not able to crawl sites with subscription popup and dynamically updating sites on scroll```
 3. How would you scale this crawler so it can crawl millions of website?
 ```I learnt that we can upload the site using 1) scrapyd 2) scrapycloud we can deploy the application and get an api.```
-```using kubernetes we can scale the docarized application container deployed.```
+```using kubernetes we can scale the dockerized application container deployed.```
 4. How would you store all the different data?
-```here in this exaple I have used sqlite, in case of production data, I will go with mongodb for insertion of data, since it is``` ```schemaless, it will be much suitable to store the scraped data.```
+```here in this example I have used sqlite, in case of production data, I will go with mongodb for insertion of data, since it is``` ```schemaless, it will be much flexible to store the scraped data.```
 5. Explain the architecture and design of the system. Draw a simple diagram of time permits
 ```This application works on the basis of scrapy framework architecture```
-```req ---> scrapy core ---> scheduler ---> scrapy core ---> downloader ---> scapy core ---> pipeline```
+```req ---> scrapy core engine ---> scheduler ---> scrapy core engine---> downloader ---> scapy core engine ---> pipeline```
 6. Explain the data model
-```I have stored a 4 fileds from the ruuning shows data availble on bookmyshow with the following fields 1) title 2)language 3) genre ```
+```I have stored a 4 fields from the "runing shows" data available on bookmyshow with the following fields 1) title 2)language 3) genre ```
 ```4)url in the table shows_tb```
 7. Design patterns used
 ```The code works on the basis of scrapy framework which is an asynchronous non blocking event driven architecture.```
